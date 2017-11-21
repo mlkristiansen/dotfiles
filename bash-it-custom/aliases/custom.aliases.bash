@@ -4,14 +4,15 @@
 # cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/¡
 
 ## Navigation
-alias crs='cd ~/PROJEKTER/SKAT/CRS/crs'
+alias rente='cd ~/PROJEKTER/SKAT/RENTE/rente'
+alias ren='rente'
 
 ## Gradle
 alias gwcc='./gradlew clean check'
 alias gwct='./gradlew clean test integrationTest'
 alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
 alias gw='./gradlew'
-alias cleanDockerCleanCheckCircleEnv='docker stop postgres && sudo rm -rf /tmp/postgres_data/ && docker start postgres && ./gradlew clean check -Dgrails.env=circleci'
+alias cleanPostgres='docker stop postgres && sudo rm -rf /tmp/postgres_data/ && docker start postgres'
 
 ## GRAILS
 alias gt='sdk switch && grails -reloading test --non-interactive'
@@ -31,12 +32,14 @@ alias copyBashItCustom='cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.
 alias opentestreport='xdg-open build/reports/tests/index.html &> /dev/null'
 alias opencobertura='xdg-open build/reports/cobertura/index.html &> /dev/null'
 
-alias runcheck='runCodenarcCleanCheckExitIfFailure'
-alias runtest='runCleanTest'
+alias runcheck='docker start mountebank && runCodenarcCleanCheckExitIfFailure'
+alias runtest='docker start mountebank && runCleanTest'
 
 ## GIT
 alias pull="git pull && git submodule update --init --recursive ; alert"
 alias push="git push ; alert"
+alias st="git st"
+alias gg="git graph"
 
 ## SKAT
 alias skattunnel='ssh -N -L 127.0.0.1:7011:sktdemo01esb01:7011 -L 127.0.0.1:7013:sktdemo01esb01:7013 admin@sktdemo01jmp01.ccta.dk'
