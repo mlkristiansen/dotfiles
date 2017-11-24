@@ -35,8 +35,6 @@ sudo apt install -y nautilus-dropbox
 sudo add-apt-repository -y universe
 sudo apt-get update
 sudo apt-get install -y libgconf2-4 libnss3-1d libxss1
-sudo apt-get install -y unity-tweak-tool
-
 
 sudo apt-get install -y wkhtmltopdf
 
@@ -86,7 +84,7 @@ sudo apt install -y veracrypt
 sudo apt install -y ranger
 
 # https://extensions.gnome.org/
-sudo apt-get install chrome-gnome-shell
+sudo apt-get install -y chrome-gnome-shell
 
 # Database
 sudo apt install -y postgresql-client-common
