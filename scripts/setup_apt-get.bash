@@ -37,12 +37,6 @@ sudo apt-get update
 sudo apt-get install -y libgconf2-4 libnss3-1d libxss1
 sudo apt-get install -y unity-tweak-tool
 
-sudo add-apt-repository -y ppa:snwh/pulp
-sudo apt-get update
-sudo apt-get install -y paper-icon-theme
-sudo apt-get install -y paper-gtk-theme
-sudo apt-get install -y paper-cursor-theme
-
 
 sudo apt-get install -y wkhtmltopdf
 
