@@ -60,6 +60,8 @@ sudo apt-get install -y gnome-sushi
 sudo apt install -y xdotool
 
 # Ubuntu make
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt-get update
 sudo apt-get install -y ubuntu-make
 yes | sudo umake ide idea-ultimate
 yes | sudo umake ide datagrip
@@ -88,6 +90,9 @@ sudo apt update
 sudo apt install -y veracrypt
 
 sudo apt install -y ranger
+
+# https://extensions.gnome.org/
+sudo apt-get install chrome-gnome-shell
 
 # Database
 sudo apt install -y postgresql-client-common
