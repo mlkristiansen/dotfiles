@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "10 hest"
+echo $1/test

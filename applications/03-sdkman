@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+if [ ! $SDKMAN_VERSION ]; then
+    curl -s "https://get.sdkman.io" | bash
+fi

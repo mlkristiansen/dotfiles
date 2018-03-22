@@ -1,4 +1,4 @@
-# Brian's Dotfiles
+# Morten's Dotfiles
 
 ## What Is This?
 
@@ -15,30 +15,24 @@ Follow these install instructions to setup a new Ubuntu.
 1. Set main download server
    1. Software & updates -> Ubuntu software -> Download from: Main server
 1. Install git: `sudo apt-get update && sudo apt-get install -y git`
-1. Clone this repo to `~/.dotfiles` 
-   1. `git clone git@github.com:brianjohnsen/dotfiles.git ~/.dotfiles`
+1. Clone this repo
 1. Run `install.sh` to start the installation
-1. Make sure Dropbox is set up and synced
 1. Restart your computer to finalize the process
    1. `shutdown -r now`
 
 Your Ubuntu is now ready to use!
 
 
-## Customize
-
-Further customizations.
-
-1. Enable Paper Theme
-   1. Unity Tweak Tool -> Theme -> Theme, Icon, Cursor
-1. Disable all annoying keyboard shortcuts
-   1. Keyboard -> Shortcuts
-
-
 
 ## Your Own Dotfiles
 
 If you want to start your own dotfiles from this setup, it's pretty easy to do so. First of all you'll need to fork this repo. After that you can tweak it the way you want.
+
+### Adding (or removing) applications
+
+To add or remove applications, simply add or remove idempotent install scripts to the `applications` folder.
+
+Ensure that the script-files have no suffix like `.sh` or similar. If they have a suffix they will not be run. This is due to the way `run-parts` is implemented.
 
 Enjoy your own Dotfiles!
 

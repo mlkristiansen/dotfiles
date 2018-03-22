@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+source ~/.bashrc
+if [ ! $GRAILS_HOME ]; then
+    sdk install grails
+fi

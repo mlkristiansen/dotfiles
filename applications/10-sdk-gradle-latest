@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+source ~/.bashrc
+if [ ! $GRADLE_HOME ]; then
+    sdk install gradle
+fi

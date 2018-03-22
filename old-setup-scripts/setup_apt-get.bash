@@ -43,7 +43,7 @@ sudo apt install -y docker.io
 sudo apt-get install -y bleachbit
 
 # Because: http://askubuntu.com/questions/856659/backup-does-not-work-on-ubuntu-16-10-and-16-04
-sudo apt-get install -y duplicity
+#sudo apt-get install -y duplicity
 
 # Preview (http://www.omgubuntu.co.uk/2016/09/gnome-sushi-mac-quick-look-nautilus)
 sudo apt-get install -y gnome-sushi

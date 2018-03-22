@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+source ~/.bashrc
+if [ ! $JAVA_HOME ]; then
+    sdk install java 8u161-oracle
+fi

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+source ~/.bashrc
+if [ ! $GROOVY_HOME ]; then
+    sdk install groovy
+fi
