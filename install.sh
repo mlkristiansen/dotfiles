@@ -14,10 +14,16 @@ echo "Setting right permissions for SSH"
 chmod -v 700 ~/.ssh
 chmod -v 600 ~/.ssh/*
 
-## Install all applications in application folder
+## Install all applications in applications folder
 echo "APPS"
 find applications -type f -print0 | xargs -0 sudo chmod 755
 run-parts --report --arg=$(pwd) applications
+
+## Install all scripts in scripts folder
+echo "SCRIPTS"
+find scripts -type f -print0 | xargs -0 sudo chmod 755
+run-parts --report --arg=$(pwd) scripts
+
 
 ##########################################################################################
 ## Backup:
