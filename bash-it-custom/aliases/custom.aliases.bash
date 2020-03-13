@@ -8,6 +8,7 @@ alias srw='cd ~/workspace/simpel-registrering-web'
 
 ## Gradle
 alias gwcc='./gradlew clean check'
+alias gwcc='./gradlew clean check'
 alias gwct='./gradlew clean test integrationTest'
 alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
 alias gw='./gradlew'
@@ -43,3 +44,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 ## VIM
 alias vi="vim"
+
+## ERST
+alias logs-nine='sudo mount -t cifs -o vers=2.0,username=smb_ni_mlk,uid=1000 //samba.nonprod.es.local/logs-nine /media/nc/logs-nine'
