@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+sudo apt-get -y install apt-transport-https curl gnupg
+
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+
+sudo add-apt-repository "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"
+
+sudo apt-get update
+
+sudo apt-get -y install brave-browser
