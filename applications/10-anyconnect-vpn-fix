@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 #yes | sudo add-apt-repository -y ppa:aacebedo/fasd
-sudo apt-get update
-sudo apt-get install -y fasd
+sudo apt-get remove network-manager-config-connectivity-ubuntu

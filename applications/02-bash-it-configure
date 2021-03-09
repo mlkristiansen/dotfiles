@@ -1,17 +1,30 @@
-#!/usr/bin/env bash
+#!/bin/bash -i
+
+PS1='$ '
 
 source ~/.bashrc
 
 echo "Setting up bash-it..."
 
 echo "Setting up aliases"
-bash-it enable alias general clipboard
+bash-it enable alias general
+bash-it enable alias clipboard
 
 echo "Setting up plugins"
-bash-it enable plugin alias-completion git history sdkman
+bash-it enable plugin alias-completion
+bash-it enable plugin git
+bash-it enable plugin history
+bash-it enable plugin sdkman
+bash-it enable plugin fasd
 
 echo "Setting up completions"
-bash-it enable completion bash-it git gradle sdkman system vagrant npm
+bash-it enable completion bash-it
+bash-it enable completion git
+bash-it enable completion gradle
+bash-it enable completion sdkman
+bash-it enable completion system
+bash-it enable completion vagrant
+bash-it enable completion npm
 
 echo "Copy custom stuff to .bash_it"
 cp -vf $1/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/

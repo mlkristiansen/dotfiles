@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-sudo apt-get update
-sudo apt-get install -y cifs-util
-
-# ERST specifik
-sudo mkdir -p /media/nc/logs-nine

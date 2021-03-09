@@ -8,7 +8,7 @@ alias srw='cd ~/workspace/simpel-registrering-web'
 
 ## Gradle
 alias gwcc='./gradlew clean check'
-alias gwcc='./gradlew clean check'
+alias gwccc='./gradlew clean check -DENABLE_CLOVER=true; alert'
 alias gwct='./gradlew clean test integrationTest'
 alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
 alias gw='./gradlew'

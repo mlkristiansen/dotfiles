@@ -14,6 +14,11 @@ echo "Setting right permissions for SSH"
 chmod -v 700 ~/.ssh
 chmod -v 600 ~/.ssh/*
 
+## Install all hardware-fixes
+echo "APPS"
+find hardware/5750 -type f -print0 | xargs -0 sudo chmod 755
+run-parts --report --arg=$(pwd) hardware/5750
+
 ## Install all applications in applications folder
 echo "APPS"
 find applications -type f -print0 | xargs -0 sudo chmod 755
