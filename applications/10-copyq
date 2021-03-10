@@ -1,7 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash -i
 
+sudo add-apt-repository ppa:hluk/copyq
 sudo apt-get update
 sudo apt-get install -y copyq
+
+copyq config autostart true
 
 configitem='X-GNOME-Autostart-Delay=3'
 autostartfile=~/.config/autostart/copyq.desktop
