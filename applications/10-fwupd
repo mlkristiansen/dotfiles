@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-sudo apt-get update
-sudo apt remove -y fwupd
-snap install fwupd --classic
